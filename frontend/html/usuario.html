@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../js/usuario/listar.js" defer></script>
+    <script src="../js/usuario/apagar.js" defer></script>
+    <script src="../js/usuario/atualizar.js" defer></script>
+    <script src="../js/usuario/cadastrar.js" defer></script>
+    <script src="../js/usuario/consultarId.js" defer></script>
+    <script src="../js/usuario/consultarNome.js" defer></script>
+    <script src="../js/usuario/lote.js" defer></script>
+    <title>Sistema</title>
+</head>
+<body>
+    <header>
+        <main>
+        <nav>
+            <div id="amain">
+                 <a href="./usuario.html">Usuario</a>
+                <a href="./produto.html">Produto</a>
+                <a href="./compra.html">Compra</a>
+                <a href="./grafico.html">Grafico</a>
+                <a href="./relatorio.html">relatorio</a>
+            </div>
+        </nav>
+        <hr>
+    </header>
+    
+    <main>
+        <!-- LISTAR -->
+        <h1>Sistema de listagem de Usuários</h1>
+        <form class="form-listar">
+            <button id="buttonListar">Listar</button>
+        </form>
+        <div id="resListar"></div>
+
+        <hr>
+        <hr>
+
+        <!-- CONSULTAR NOME -->
+        <h1>Sistema de consulta de Usuários pelo nome</h1>
+        <form>
+            <label for="nome">Digite o nome do usuário</label><br>
+            <input type="text" id="nome"><br><br>
+            <button id="buttonConsultarNome">Consultar</button>
+        </form>
+        <div id="resNome"></div>
+
+        <hr>
+        <hr>
+
+        <!-- CONSULTAR ID -->
+        <h1>Sistema de consulta de Usuários por código único</h1>
+        <form>
+            <label for="usuarioId">Digite o código único do usuário</label><br>
+            <input type="number" id="usuarioId"><br><br>
+            <button id="buttonConsultarId">Consultar</button>
+        </form>
+        <div id="resId"></div>
+
+        <hr>
+        <hr>
+
+        <!-- CADASTRAR -->
+        <h1>Sistema de cadastro de Usuário</h1>
+        <form>
+            <label for="firstName">Digite o nome do usuário</label><br>
+            <input id="firstName" placeholder="Exemplo: José"><br><br>
+
+            <label for="lastName">Digite o sobrenome do usuário</label><br>
+            <input id="lastName" placeholder="Exemplo: Silva"><br><br>
+
+            <label for="age">Digite a idade do usuário</label><br>
+            <input id="age" type="number"><br><br>
+
+            <label for="email">Digite o email do usuário</label><br>
+            <input id="email" placeholder="Exemplo: jose@gmail.com"><br><br>
+
+            <label for="phone">Digite o telefone do usuário</label><br>
+            <input id="phone" type="text" placeholder="(48) 99999-8888"><br><br>
+
+            <label for="address">Digite o endereço do usuário</label><br>
+            <input id="address" type="text" placeholder="Rua Rio Tavares"><br><br>
+
+            <label for="city">Digite a cidade do usuário</label><br>
+            <input id="city" placeholder="Exemplo: Tijucas"><br><br>
+
+            <label for="state">Digite o estado do usuário</label><br>
+            <input id="state" placeholder="Exemplo: Santa Catarina"><br><br>
+
+            <label for="birthDate">Coloque a data de nascimento do usuário</label><br>
+            <input id="birthDate" type="date"><br><br>
+
+            <button id="buttonCadastrar">Cadastrar</button><br><br>
+            <button id="buttonLote">Cadastrar em Lote</button><br><br>
+        </form>
+        <div id="resCadastro"></div>
+
+        <hr>
+        <!-- Atualizar -->
+        <h1>Sistema de Atualizar de Usuario</h1>
+        <br>
+        <br>
+        <br>
+        <form>
+            <label for="usuarioId">Digite o codigo unico do usuario</label><br>
+            <input type="number" id="usuarioIdAtua"><br><br>
+
+            <button id="buscar">buscar</button><br><br>
+
+            <label for="firstNameAtua">Digite o nome do usuario</label><br>
+            <input id="firstNameAtua" placeholder="Exemplo: jose"><br><br>
+            <label for="lastNameAtua">Digite o sobrenome do usuario</label><br>
+            <input id="lastNameAtua" placeholder="Exemplo: silva"><br><br>
+            <label for="ageAtua">Digite a idade do usuario</label><br>
+            <input id="ageAtua" type="number"><br><br>
+            <label for="emailAtua">Digite o email do usuario</label><br>
+            <input id="emailAtua" placeholder="Exemplo: jose@gmail.com"><br><br>
+            <label for="phoneAtua">Digite o telefone do usuario</label><br>
+            <input id="phoneAtua" type="text" placeholder="(48) 99999-8888"><br><br>
+            <label for="addressAtua">Digite o enedereço do usuario</label><br>
+            <input id="addressAtua" type="text" placeholder="rua rio tavares"><br><br>
+            <label for="cityAtua">Digite a cidade do usuario</label><br>
+            <input id="cityAtua" placeholder="Exemplo: tijucas"><br><br>
+            <label for="stateAtua">Digite o estado do usuario</label><br>
+            <input id="stateAtua" placeholder="Exemplo: Santa Catarina"><br><br>
+            <label for="birthDateAtua">Coloque a data de nascimento do usuario</label><br>
+            <input id="birthDateAtua" type="date"><br><br>
+            <button id="buttonAtualizar">atualizar</button>
+            <br><br>
+        </form>
+        <div id="resAtualizar"></div>
+        <hr>
+        <!-- APAGAR -->
+        <h1>Sistema de apagamento de Usuário</h1>
+        <form>
+            <label for="usuarioIdDel">Digite o código único do usuário</label><br>
+            <input type="number" id="usuarioIdDel"><br><br>
+            <button id="buttonApagar">Apagar</button>
+        </form>
+        <div id="resApagar"></div>
+    </main>
+
+    <footer>
+        <hr>
+        <br>
+        <small>feito por: Erick Miguel Schuck &reg; &trade;</small>
+    </footer>
+</body>
+
+</html>

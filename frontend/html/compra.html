@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../js/compra/apagar.js" defer></script>
+    <script src="../js/compra/atualizar.js" defer></script>
+    <script src="../js/compra/buscar.js" defer></script>
+    <script src="../js/compra/cadastrar.js" defer></script>
+    <script src="../js/compra/listar.js" defer></script>
+    <title>Compra</title>
+</head>
+<body>
+    <header>
+        <main>
+        <nav>
+            <div id="amain">
+                <a href="./usuario.html">Compra</a>
+                <a href="./produto.html">Produto</a>
+                <a href="./compra.html">Compra</a>
+                <a href="./grafico.html">Grafico</a>
+                <a href="./relatorio.html">relatorio</a>
+            </div>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <!-- LISTAR -->
+       <main>
+        <h1>Sistema de listagem de compras</h1>
+        <br><br><br>
+        <form>
+            <button id="buttonLis">listar</button>
+        </form>
+        <br><br>
+        <div id="resLis"></div>
+    </main>
+
+        <!-- CADASTRAR -->
+          <h1>Sistema de cadastro de Compra</h1>
+        <br>
+        <br>
+        <form>
+            <label for="produto_idCad">Digite o codigo do produto</label><br>
+            <input id="produto_idCad" type="number"><br><br>
+
+            <button id="buscarCadas">Buscar</button><br><br>
+
+            <label for="usuario_idCad">Digite o codigo do usuario</label><br>
+            <input id="usuario_idCad" type="number"><br><br>
+            <label for="quantCad">Digite a quantidade que foi comprado</label><br>
+            <input id="quantCad" type="number"><br><br>
+            <label for="dataCompraCad">Digite quando foi comprando</label><br>
+            <input id="dataCompraCad" type="date"><br><br>
+            <label for="unitarioCad">Digite  preço original da compra</label><br>
+            <input id="unitarioCad" type="number"><br><br>
+            <label for="descontoCad">Digite o desconto</label><br>
+            <input id="descontoCad"><br><br>
+            <select name="forma de pagamento" id="formaPagCad">
+                <option value="credito">credito</option>
+                <option value="debito">debito</option>
+            </select><br><br>   
+            <label for="statusCad">Digite o status da compra</label><br>
+            <input id="statusCad"><br><br>
+
+            <button id="buttonCadas">Cadastrar</button><br><br>
+            <br><br>
+        </form>
+        <div id="resCadas"></div>
+        <hr>
+        <!-- Atualizar -->
+          <main>
+        <h1>Sistema de atualização de Usuario</h1>
+        <br>
+        <br>
+        <form>
+            <label for="compraIdAtua">Digite o codigo da compra</label><br>
+            <input id="compraIdAtua" type="number"><br><br>
+            <button id="buscarAtua">buscar</button><br><br>
+            <label for="produto_idAtua">Digite o codigo do produto</label><br>
+            <input id="produto_idAtua" type="number"><br><br>
+            <label for="usuario_idAtua">Digite o codigo do usuario</label><br>
+            <input id="usuario_idAtua" type="number"><br><br>
+            <label for="quantAtua">Digite a quantidade que foi comprado</label><br>
+            <input id="quantAtua" type="number"><br><br>
+            <label for="dataCompraAtua">Digite quando foi comprando</label><br>
+            <input id="dataCompraAtua" type="date"><br><br>
+            <label for="unitarioAtua">Digite  preço original da compra</label><br>
+            <input id="unitarioAtua" type="number"><br><br>
+            <label for="descontoAtua">Digite o desconto</label><br>
+            <input id="descontoAtua"><br><br>
+            <select name="forma de pagamento" id="formaPagAtua">
+                <option value="credito">credito</option>
+                <option value="debito">debito</option>
+            </select><br><br>   
+            <label for="statusAtua">Digite o status da compra</label><br>
+            <input id="statusAtua"><br><br>
+            <button id="button">atualizar</button>
+            <br><br>
+        </form>
+        <div id="res"></div>
+    </main>
+        <!-- APAGAR -->
+        <main>
+        <h1>Sistema de apagamento de compras</h1>
+        <br>
+        <br>
+        <br>
+        <form>
+            <label for="compraId">Digite o codigo unico da compra</label><br>
+            <input type="number" id="compraId"><br><br>
+            <button id="buttonApa">apagar</button>
+            <br><br>
+        </form>
+        <div id="resApa"></div>
+    </main>
+    </main>
+    <footer>
+        <hr>
+        <br>
+        <small>feito por: Erick Miguel Schuck &reg; &trade;</small>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../js/produto/apagar.js" defer></script>
+    <script src="../js/produto/atualizar.js" defer></script>
+    <script src="../js/produto/cadastrar.js" defer></script>
+    <script src="../js/produto/consultarId.js" defer></script>
+    <script src="../js/produto/consultarNome.js" defer></script>
+    <script src="../js/produto/listar.js" defer></script>
+    <script src="../js/produto/lote.js" defer></script>
+
+    <title>Produtos</title>
+</head>
+<body>
+    <body>
+    <header>
+        <main>
+        <nav>
+            <div id="amain">
+                  <a href="./usuario.html">Compra</a>
+                <a href="./produto.html">Produto</a>
+                <a href="./compra.html">Compra</a>
+                <a href="./grafico.html">Grafico</a>
+                <a href="./relatorio.html">relatorio</a>
+            </div>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <!-- LISTAR -->
+         <main>
+        <h1>Sistema de listagem de Pordutos</h1>
+        <br><br><br>
+        <form>
+            <button id="buttonListar">listar</button>
+        </form>
+        <br><br>
+        <div id="resListar"></div>
+    </main>
+        <hr>
+
+        <!-- CONSULTAR NOME -->
+        <main>
+        <h1>Sistema de consulta de produto pelo nome</h1>
+        <br><br><br>
+        <form>
+            <label for="nome">Digite o nome do produto</label><br>
+            <input type="text" id="nome"><br><br>
+
+            <button id="buttonNome">consultar</button>
+        </form>
+        <br><br>
+        <div id="resNome"></div>
+    </main>
+        <hr>
+        <hr>
+
+        <!-- CONSULTAR ID -->
+         <main>
+        <h1>Sistema de consulta de Produtos por codigo unico</h1>
+        <br><br><br>
+        <form>
+            <label for="usuarioId">Digite o codigo unico do produto</label><br>
+            <input type="number" id="produtoId"><br><br>
+            <button id="buttonId">consultar</button>
+        </form>
+        <br><br>
+        <div id="resId"></div>
+    </main>
+
+        <hr>
+
+        <!-- CADASTRAR -->
+        <main>
+        <h1>Sistema de cadastro de Produto</h1>
+        <br>
+        <br>
+        <br>
+        <form>
+            <label for="title">Digite o nome do produto</label><br>
+            <input id="title" placeholder="Exemplo: caixa de framboesa"><br><br>
+            <label for="description">Digite a descrição do produto</label><br>
+            <input id="description"><br><br>
+            <label for="category">Digite a categoria do produto</label><br>
+            <input id="category" type="text"><br><br>
+            <label for="price">Digite o preço do produto</label><br>
+            <input id="price"><br><br>
+            <label for="discountPercentage">Digite o desconto do produto</label><br>
+            <input id="discountPercentage" type="text"><br><br>
+            <label for="stock">Digite a quantidade de Produtos</label><br>
+            <input id="stock" type="number"><br><br>
+            <label for="brand">Digite a marca do produto</label><br>
+            <input id="brand"><br><br>
+            <label for="thumbnail">Coloque a imagem do produto</label><br>
+            <input id="thumbnail" type="text"><br><br>
+            <button id="buttonCadastrar">Cadastrar</button><br><br>
+            <button id="lote">Cadastrar em Lote</button><br><br>
+            <br><br>
+        </form>
+        <div id="resCadastrar"></div>
+    </main>
+
+        <hr>
+        <!-- Atualizar -->
+         <main>
+        <h1>Sistema de atualização do produto</h1>
+        <br>
+        <br>
+        <br>
+        <form>
+            <label for="produtoIdAtua">Digite o codigo unico do produto</label><br>
+            <input type="number" id="produtoIdAtua"><br><br>
+
+            <button id="buscar">buscar</button><br><br>
+
+            <label for="titleAtua">Digite o nome do produto</label><br>
+            <input id="titleAtua" placeholder="Exemplo: caixa de framboesa"><br><br>
+            <label for="descriptioAtua">Digite a descrição do produto</label><br>
+            <input id="descriptioAtua"><br><br>
+            <label for="categoryAtua">Digite a categoria do produto</label><br>
+            <input id="categoryAtua" type="text"><br><br>
+            <label for="priceAtua">Digite o preço do produto</label><br>
+            <input id="priceAtua"><br><br>
+            <label for="discountPercentageAtua">Digite o desconto do produto</label><br>
+            <input id="discountPercentageAtua" type="text"><br><br>
+            <label for="stockAtua">Digite a quantidade de Produtos</label><br>
+            <input id="stockAtua" type="number"><br><br>
+            <label for="brandAtua">Digite a marca do produto</label><br>
+            <input id="brandAtua"><br><br>
+            <label for="thumbnailAtua">Coloque a iamgem do produto</label><br>
+            <input id="thumbnailAtua" type="text"><br><br>
+
+            <button id="buttonAtualizar">atualizar</button>
+            <br><br>
+        </form>
+        <div id="resAtualizar"></div>
+    </main>
+        <hr>
+        <!-- APAGAR -->
+        <h1>Sistema de apagamento de Usuário</h1>
+        <form>
+            <label for="produtoIdDel">Digite o código único do usuário</label><br>
+            <input type="number" id="produtoIdDel"><br><br>
+            <button id="buttonApagar">Apagar</button>
+        </form>
+        <div id="resApagar"></div>
+    </main>
+
+    <footer>
+        <hr>
+        <br>
+        <small>feito por: Erick Miguel Schuck &reg; &trade;</small>
+    </footer>
+</body>
+
+</html>
