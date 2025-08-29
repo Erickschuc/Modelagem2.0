@@ -38,57 +38,61 @@ header {
     justify-content: center;
 }
 
-/* Estilização específica para o menu de navegação */
+/* MENU PRINCIPAL REDUZIDO - estilo horizontal compacto */
 nav {
     width: 100%;
     background: linear-gradient(145deg, #2c2c2c, #252525);
-    padding: 15px 0;
-    border-radius: 10px;
-    margin: 20px 0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    padding: 10px 0;
+    border-radius: 8px;
+    margin: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 #amain {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 8px;
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 #amain a {
     color: var(--text-secondary);
     text-decoration: none;
     font-weight: 600;
-    padding: 12px 20px;
-    border-radius: 6px;
+    padding: 8px 15px;
+    border-radius: 5px;
     background: linear-gradient(145deg, var(--accent-primary), #4a5f75);
     transition: var(--transition);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     display: inline-block;
     text-align: center;
-    min-width: 180px;
+    min-width: auto;
+    font-size: 0.9rem;
+    white-space: nowrap;
 }
 
 #amain a:hover {
     background: linear-gradient(145deg, var(--accent-hover), #3c4d5f);
-    transform: translateY(-3px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 #amain a:active {
     transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
+/* Link "voltar" separado */
 nav a {
     color: var(--accent-primary);
     text-decoration: none;
     font-weight: 500;
     transition: var(--transition);
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin: 0 10px;
 }
 
 nav a:hover {
@@ -123,7 +127,7 @@ h1 {
     width: 100%;
 }
 
-/* FORMULÁRIO DE LISTAGEM - CENTRALIZADO */
+/* FORMULÁRIOS */
 form {
     background-color: var(--bg-secondary);
     padding: 25px;
@@ -288,16 +292,15 @@ footer {
     max-width: 1200px;
 }
 
-/* Responsividade para o menu */
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
     #amain {
-        gap: 15px;
+        gap: 6px;
     }
     
     #amain a {
-        padding: 10px 15px;
-        min-width: 160px;
-        font-size: 0.9rem;
+        padding: 6px 12px;
+        font-size: 0.8rem;
     }
     
     body {
@@ -339,19 +342,21 @@ footer {
 
 @media (max-width: 480px) {
     #amain {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 4px;
     }
     
     #amain a {
-        width: 100%;
-        max-width: 250px;
-        min-width: auto;
+        padding: 5px 10px;
+        font-size: 0.75rem;
+        flex: 1;
+        min-width: 0;
+        text-align: center;
     }
     
     nav {
-        padding: 12px 0;
+        padding: 8px 0;
     }
     
     h1 {
